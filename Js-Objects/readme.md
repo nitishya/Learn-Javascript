@@ -1,0 +1,1 @@
+study objects in js
