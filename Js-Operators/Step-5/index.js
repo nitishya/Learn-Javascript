@@ -24,3 +24,11 @@ let applicationRefused = !eligibleForLoan;
 
 console.log('refused',applicationRefused);
 
+//logical with non-boolean 
+//we provide default value in this way
+let userColor = 'red';
+let defaultColor = 'blue';
+let currentcolor = userColor || defaultColor;
+
+console.log(currentColor);
+
