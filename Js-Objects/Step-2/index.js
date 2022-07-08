@@ -1,17 +1,11 @@
-//Factory Fun ction 
-function createCircle(radius){
-    return {
-       radius,   //equivalent to => radius : radius,
-        
-       draw(){
-            console.log('draw');
-        }
-    }; 
-}
+const circle = {
+    radius: 1
+};
 
-const circle1 = createCircle(1);
-console.log(circle1);
+circle.color = 'yellow';
+circle.draw = function(){}
 
 
-const circle2 = createCircle(12);
-console.log(circle2);
+delete circle.color; //can delete a function  beacause circle is constant so we cant change it,but can change its method
+
+console.log(circle);
